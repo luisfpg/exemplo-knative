@@ -1,0 +1,29 @@
+{
+  "name": "exemplo-knative",
+  "version": "1.0.0",
+  "description": "Exemplo de FaaS usando o Knative",
+  "author": "Luis Fernando Planella Gonzalez",
+  "license": "MIT",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@hapi/hapi": "^20.2.2"
+  },
+  "devDependencies": {
+    "@types/amqplib": "^0.8.2",
+    "@types/hapi__hapi": "^20.0.12",
+    "@types/node": "^18.8.4",
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "eslint": "^8.25.0",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.3.0",
+    "eslint-plugin-promise": "^6.0.1",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.4"
+  }
+}
