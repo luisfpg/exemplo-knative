@@ -2,12 +2,11 @@ apiVersion: serving.knative.dev/v1
 kind: Service
 metadata:
   name: ola-mundo
-  namespace: exemplo
 spec:
   template:
     spec:
       containers:
-        - image: kind.local/ola-mundo
-          imagePullPolicy: IfNotPresent
+        - image: dev.local/ola-mundo
+          imagePullPolicy: Never
           ports:
             - containerPort: 3000
